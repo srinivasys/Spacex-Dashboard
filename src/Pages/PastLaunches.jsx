@@ -12,7 +12,7 @@ const PastLaunches = () => {
       const url = 'https://api.spacexdata.com/v5/launches/past'
       const response = await fetch(url)
       const data = await response.json()
-      // console.log(data)
+      console.log(data)
       setPastLaunchData(data)
     }
     fetchPastLaunchData()
@@ -24,7 +24,7 @@ const PastLaunches = () => {
         <Loader />
       ) : (
         <article className='py-32 max-width'>
-          <h1 className='heading text-center mb-10'>Upcoming Launches</h1>
+          <h1 className='heading text-center mb-10'>Past Launches</h1>
 
           <div className="max-width grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 px-5">
             {pastLaunchData.map(({id, name, links, details, flight_number, date_local}) => (

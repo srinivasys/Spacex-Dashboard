@@ -44,11 +44,13 @@ const LaunchCard = () => {
                 <span className="text-rose-500">Failed</span>
               )}
             </h2>
-            <p className='text-white font-bold text-xl opacity-75'>{singleLaunch.flight_number}</p>
+            <p className='text-white font-bold text-xl opacity-75'>Flight Number: {singleLaunch.flight_number}</p>
 
             <p className="text-white opacity-75 my-10">
               {singleLaunch.details}
             </p>
+
+            <p className='text-white font-bold text-xl opacity-75'>Payload: {singleLaunch.payloads}</p>
 
             <ul className="text-white text-sm opacity-75 mb-8">
               <li className="mb-3">
