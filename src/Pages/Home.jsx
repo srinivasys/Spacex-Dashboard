@@ -28,7 +28,7 @@ const Home = () => {
                 All the SpaceX Data in one place
               </h1>
 
-              <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto mt-10 lg:gap-20 px-5">
+              <div className="grid grid-cols-1 gap-5 md:grid-cols-3 max-w-4xl mx-auto mt-10 lg:gap-20 px-5">
                 <article>
                   <h2 className="font-bold border-b-2 border-white text-xl mb-3 pb-2 uppercase tracking-wider">
                     About
@@ -38,7 +38,7 @@ const Home = () => {
                     <li className="mb-1">{companyDetails.founder} in the year</li>
                     <li className="mb-1">{companyDetails.founded}.</li>
                     <li className="mb-1">
-                      It has {companyDetails.employees} employess,
+                      It has {companyDetails.employees} employes,
                     </li>
                     <li className="mb-1">{companyDetails.vehicles} vehicles,</li>
                     <li className="mb-1">
